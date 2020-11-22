@@ -1,6 +1,6 @@
 # BitManipulation
 
-https://youtu.be/Etoggf42trE
+https://youtu.be/Etoggf42trE \
 https://www.youtube.com/watch?v=zxb8DvLUqcM
 
 Quora questions :-
@@ -9,11 +9,9 @@ https://www.quora.com/What-is-an-intuitive-explanation-for-why-x-x-1-always-equa
 
 Tactics :-
 
-https://www.topcoder.com/community/competitive-programming/tutorials/a-bit-of-fun-fun-with-bits/
-
-https://www.geeksforgeeks.org/bits-manipulation-important-tactics/
-
-https://www.hackerearth.com/practice/notes/bit-manipulation/
+https://www.topcoder.com/community/competitive-programming/tutorials/a-bit-of-fun-fun-with-bits/ \
+https://www.geeksforgeeks.org/bits-manipulation-important-tactics/ \
+https://www.hackerearth.com/practice/notes/bit-manipulation/ 
 
 Practice :-
 
@@ -30,7 +28,7 @@ extracts the lowest cleared bit of x, (all others are set) -> x | ~(x + 1)
 x & (x + (1 << n))
 
 1<<n will be all 0s with 1 at (n+1)th bit.\
-For eg 1<<2 = 100\
+For eg 1<<2 = 100
 
 x+(1 << n)\
 will give same bit as x for first n positions\
