@@ -25,9 +25,28 @@ set the lowest cleared bit of x -> x | (x + 1)
 
 extracts the lowest cleared bit of x, (all others are set) -> x | ~(x + 1)
 
-clear the run of set bit starting at bit n of x -> x & (x + (1 << n))
+**Clear the run of set bit starting at bit n of x** 
+x & (x + (1 << n))
 
-the run of set bits starting at bit n of x -> x & ~(x + (1 << n))
+1<<n will be all 0s with 1 at (n+1)th bit.
+For eg 1<<2 = 100
+
+x+(1 << n)
+will give same bit as x for first n positions
+clear the continous run of set bits in x from nth position
+first non set bit after the continous run of set bits  will be set
+rest of the bits remain same
+
+x & (x + (1 << n))
+will give same bit as x for first n positions
+0 for the continous run of set bits in x from nth position
+first non set bit after the continous run of set bits will be 0
+rest of the bits remain same
+
+Hence only the run of set bit starting at bit n of x are cleared, rest remain same
+
+**the run of set bits starting at bit n of x**
+x & ~(x + (1 << n))
 
 set the run of cleared bit starting at bit n of x -> x | (x - (1 << n))
 
