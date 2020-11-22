@@ -17,18 +17,18 @@ https://www.hackerearth.com/practice/notes/bit-manipulation/
 
 Practice :-
 
-x & (x-1) will clear the lowest set bit of x
+clear the lowest set bit of x -> x & (x-1)
 
-x & ~(x-1) extracts the lowest set bit of x (all others are clear). Pretty patterns when applied to a linear sequence.
+extract the lowest set bit of x, (all others are clear) -> x & ~(x-1)
 
-x & (x + (1 << n)) = x, with the run of set bits (possibly length 0) starting at bit n cleared.
+set the lowest cleared bit of x -> x | (x + 1)
 
-x & ~(x + (1 << n)) = the run of set bits (possibly length 0) in x, starting at bit n.
+extracts the lowest cleared bit of x, (all others are set) -> x | ~(x + 1)
 
-x | (x + 1) = x with the lowest cleared bit set.
+clear the run of set bit starting at bit n of x -> x & (x + (1 << n))
 
-x | ~(x + 1) = extracts the lowest cleared bit of x (all others are set).
+the run of set bits starting at bit n of x -> x & ~(x + (1 << n))
 
-x | (x - (1 << n)) = x, with the run of cleared bits (possibly length 0) starting at bit n set.
+set the run of cleared bit starting at bit n of x -> x | (x - (1 << n))
 
-x | ~(x - (1 << n)) = the lowest run of cleared bits (possibly length 0) in x, starting at bit n are the only clear bits
+the lowest run of cleared bits (possibly length 0) in x, starting at bit n are the only clear bits -> x | ~(x - (1 << n))
