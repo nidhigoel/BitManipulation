@@ -4,9 +4,11 @@ https://youtu.be/Etoggf42trE
 https://www.youtube.com/watch?v=zxb8DvLUqcM
 
 Quora questions :-
+
 https://www.quora.com/What-is-an-intuitive-explanation-for-why-x-x-1-always-equals-x-with-the-lowest-bit-erased
 
 Tactics :-
+
 https://www.topcoder.com/community/competitive-programming/tutorials/a-bit-of-fun-fun-with-bits/
 
 https://www.geeksforgeeks.org/bits-manipulation-important-tactics/
